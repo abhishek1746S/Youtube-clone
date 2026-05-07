@@ -14,12 +14,6 @@ function Header() {
     </nav>
     </header>
     <ul className={styles.alltype}>
-      {navbar && (
-  <div 
-    className={styles.overlay}
-    onClick={() => isnavbar(false)}
-  ></div>
-)}
       <li onClick={()=>isnavbar(true)}><img className="h-7 w-7 shrink-0" src="https://img.icons8.com/?size=35&id=88004&format=png&color=000000" alt="" /> </li>
       <li>All</li>
       <li>New to you</li>
@@ -45,6 +39,9 @@ function Header() {
       <li>Send feedback</li>
     </ul>
     {
+      navbar&&(<div className={styles.overlay} onClick={()=>isnavbar(false)}></div>)
+    }
+    {
       navbar?<>
       <ul className={styles.navbar}>
         <li><img src="https://img.icons8.com/?size=45&id=QyYjooyvYGgV&format=png&color=000000" alt="youtube" />YouTube</li>
@@ -67,7 +64,7 @@ function Header() {
         <li><img src="https://img.icons8.com/?size=35&id=rVwEVmVZ7qb7&format=png&color=000000" alt="" />YouTube Create</li>
         <li>Privacy Policy-Terms oof Service</li>
       </ul>
-      </>:<></>
+      </>:null
     }
    </>
   );
