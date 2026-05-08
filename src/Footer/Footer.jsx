@@ -2,65 +2,43 @@ import React from "react";
 import styles from "./Footer.module.css";
 import { useState } from "react";
 const Footer = () => {
+  const [subscription, setSubscription] = useState(false);
   const [accountlogin, setAccountlogin] = React.useState(false);
+  const[sublist,isSublist]=useState(false);
   return (
     <>
       <footer className="flex mt-auto">
         <ul className={styles.ulfl}>
           <li>
-            <img
-              src="https://img.icons8.com/?size=45&id=86527&format=png&color=000000"
-              alt=""
-            />
+            <img src="https://img.icons8.com/?size=45&id=86527&format=png&color=000000" alt="Home"/>
           </li>
           <li>
-            <img
-              src="https://img.icons8.com/?size=45&id=ajczeHCWXbyR&format=png&color=000000"
-              alt=""
-            />
+            <img src="https://img.icons8.com/?size=45&id=ajczeHCWXbyR&format=png&color=000000"alt="shorts"/>
           </li>
           <li>
-            <img
-              src="https://img.icons8.com/?size=45&id=24717&format=png&color=000000"
-              alt=""
-            />
+            <img src="https://img.icons8.com/?size=45&id=24717&format=png&color=000000"alt="upload"/>
           </li>
           <li>
-            <img
-              src="https://img.icons8.com/?size=45&id=reqYJP3X0f7Y&format=png&color=000000"
-              alt=""
-            />
+            <img onClick={()=>{setSubscription(true),setAccountlogin(false)}}src="https://img.icons8.com/?size=45&id=reqYJP3X0f7Y&format=png&color=000000"alt="subscription"/>
           </li>
           <li>
-            <img
-              onClick={() => setAccountlogin(true)}
-              src="https://img.icons8.com/?size=45&id=85050&format=png&color=000000"
-              alt=""
-            />
+            <img onClick={() =>{ setAccountlogin(true),setSubscription(false)}} src="https://img.icons8.com/?size=45&id=85050&format=png&color=000000"alt="account"/>
           </li>
         </ul>
       </footer>
+       {/* start jsx code of setaccount login  */}
       {accountlogin ? (
         <div className={styles.parent}>
           <ul>
             <li className="m-5">Accounts</li>
             <li className="ml-auto m-5">
-              <img
-                src="https://img.icons8.com/?size=30&id=eMfeVHKyTnkc&format=png&color=000000"
-                alt=""
-              />
+              <img src="https://img.icons8.com/?size=30&id=eMfeVHKyTnkc&format=png&color=000000"alt=""/>
             </li>
             <li className="m-5">
-              <img
-                src="https://img.icons8.com/?size=30&id=59878&format=png&color=000000"
-                alt=""
-              />
+              <img src="https://img.icons8.com/?size=30&id=59878&format=png&color=000000"alt=""/>
             </li>
             <li className="m-5">
-              <img
-                src="https://img.icons8.com/?size=30&id=364&format=png&color=000000"
-                alt=""
-              />
+              <img src="https://img.icons8.com/?size=30&id=364&format=png&color=000000"alt=""/>
             </li>
           </ul>
           <div className={styles.account}>
@@ -72,28 +50,108 @@ const Footer = () => {
           </div>
           <p className="text-2xl m-5">History</p>
           <div className={styles.history}>
-            <div><div className={styles.card}></div><p className="ml-2">hreek</p></div>
-            <div><div className={styles.card}></div><p className="ml-2">hreek</p></div>
-            <div><div className={styles.card}></div><p className="ml-2">hreek</p></div>
-            <div><div className={styles.card}></div><p className="ml-2">hreek</p></div>
+            <div>
+              <div className={styles.card}></div>
+              <p className="ml-2">hreek</p>
+            </div>
+            <div>
+              <div className={styles.card}></div>
+              <p className="ml-2">hreek</p>
+            </div>
+            <div>
+              <div className={styles.card}></div>
+              <p className="ml-2">hreek</p>
+            </div>
+            <div>
+              <div className={styles.card}></div>
+              <p className="ml-2">hreek</p>
+            </div>
           </div>
 
           <p className="text-2xl m-5">playlist</p>
           <div className={styles.history}>
-            <div><div className={styles.card}></div><p className="ml-2">hreek</p></div>
-            <div><div className={styles.card}></div><p className="ml-2">hreek</p></div>
-            <div><div className={styles.card}></div><p className="ml-2">hreek</p></div>
-            <div><div className={styles.card}></div><p className="ml-2">hreek</p></div>
+            <div>
+              <div className={styles.card}></div>
+              <p className="ml-2">hreek</p>
+            </div>
+            <div>
+              <div className={styles.card}></div>
+              <p className="ml-2">hreek</p>
+            </div>
+            <div>
+              <div className={styles.card}></div>
+              <p className="ml-2">hreek</p>
+            </div>
+            <div>
+              <div className={styles.card}></div>
+              <p className="ml-2">hreek</p>
+            </div>
           </div>
           <div className={styles.nav}>
-          <div className="m-5 mt-8"><img src="https://img.icons8.com/?size=50&id=EFNMFqL2CsU7&format=png&color=000000" alt="" />Your videos</div>
-          <div  className="m-5 mt-8"><img src="https://img.icons8.com/?size=50&id=14100&format=png&color=000000" alt="" />Downloads</div>
-          <div className="m-5 mt-8"><img src="https://img.icons8.com/?size=50&id=2998&format=png&color=000000" alt="" />Films</div>
-          <div className="m-5 mt-8"><img src="https://img.icons8.com/?size=50&id=4TvpjGq1YxO5&format=png&color=000000" alt="" />Courses</div>
-          <div className="inline-flex m-5 mt-8 mb-20"><img src="https://img.icons8.com/?size=50&id=37325&format=png&color=000000" alt="" /><p className="text-center">Get YouTube Premium</p></div>
+            <div className="m-5 mt-0">
+              <img src="https://img.icons8.com/?size=50&id=EFNMFqL2CsU7&format=png&color=000000"alt=""/>
+              Your videos
+            </div>
+            <div className="m-5 mt-0">
+              <img src="https://img.icons8.com/?size=50&id=14100&format=png&color=000000"alt=""/>
+              Downloads
+            </div>
+            <div className="m-5 mt-0">
+              <img src="https://img.icons8.com/?size=50&id=2998&format=png&color=000000"alt=""/>
+              Films
+            </div>
+            <div className="m-5 mt-0">
+              <img src="https://img.icons8.com/?size=50&id=4TvpjGq1YxO5&format=png&color=000000"alt=""/>
+              Courses
+            </div>
+            <div className="inline-flex m-5 mt-0 mb-20">
+              <img src="https://img.icons8.com/?size=50&id=37325&format=png&color=000000"alt=""/>
+              <p className="text-center">Get YouTube Premium</p>
+            </div>
           </div>
         </div>
-      ) : null}
+      ) : null}{/* end complete jsx code  setlogin */}
+      {/* start jsx code of subscription */}
+      {
+        subscription ? <>
+        <div className={styles.parent1}>
+          <ul>
+            <li className="flex items-center text-3xl gap-2" style={{border:"none"}}><img className="ml-3" src="https://img.icons8.com/?size=45&id=QyYjooyvYGgV&format=png&color=000000" alt="youtube" />YouTube</li>
+            <li className="ml-auto m-5">
+              <img src="https://img.icons8.com/?size=30&id=eMfeVHKyTnkc&format=png&color=000000"alt=""/>
+            </li>
+            <li className="m-5">
+              <img src="https://img.icons8.com/?size=30&id=59878&format=png&color=000000"alt=""/>
+            </li>
+            </ul>
+            <div className="flex">
+            <div className={styles.subsciber}>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channhshel-name</span></p>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+              <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+              </div>
+              <p className="text-xl m-2 mt-5" onClick={()=>isSublist(true)}>All</p>
+            </div>
+            <ul className={styles.list} >
+              <li>All</li>
+              <li>Today</li>
+              <li>Videos</li>
+              <li>Shorts</li>
+              <li>Live</li>
+              <li>Podcasts</li>
+              <li>Posts</li>
+              <li>Continue watching</li>
+              <li>Unwatched</li>
+              <li>Settings</li>
+            </ul>
+          </div></> : null
+      }
     </>
   );
 };
