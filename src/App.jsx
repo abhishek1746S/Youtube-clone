@@ -6,11 +6,8 @@ function App() {
    <>
    <div className="parent flex flex-col">
     <div><Header/></div>
-
     <main className="flex-1 "></main> 
-
     <Footer/>
-
    </div>
    </>
   );
