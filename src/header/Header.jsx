@@ -8,9 +8,9 @@ function Header() {
    <header>
     <nav>
       <ul className={styles.ulfl}>
-        <li className="flex items-center text-3xl gap-2"><img className="ml-3" src="https://img.icons8.com/?size=45&id=QyYjooyvYGgV&format=png&color=000000" alt="youtube" />YouTube</li>
-        <li className="ml-auto mr-5"><img src="https://img.icons8.com/?size=30&id=eMfeVHKyTnkc&format=png&color=000000" alt="notification"/></li>
-        <li className="mr-3"><img src="https://img.icons8.com/?size=30&id=59878&format=png&color=000000" alt="search" /></li>
+        <li className="flex items-center text-3xl gap-2"><img className="ml-3" src="https://img.icons8.com/?size=50&id=QyYjooyvYGgV&format=png&color=000000" alt="youtube" />YouTube</li>
+        <li className="ml-auto mr-5"><img src="https://img.icons8.com/?size=40&id=eMfeVHKyTnkc&format=png&color=000000" alt="notification"/></li>
+        <li className="mr-3"><img src="https://img.icons8.com/?size=40&id=59878&format=png&color=000000" alt="search" /></li>
       </ul>
     </nav>
     </header>

@@ -1,12 +1,13 @@
 .parent {
   width: 100vw;
   display: flex;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
   align-items: center;
   background-color: aliceblue; 
   align-items: center;
   justify-content: space-between; 
   padding: 5px 10px;
-  z-index: 2;
 }
-

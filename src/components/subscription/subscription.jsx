@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from "/src/Footer/Subscription.module.css"
+import styles from "./Subscription.module.css";
+import Home from '../Home/home.jsx';
 const Subscription = () => {
   return (
     <>
@@ -15,15 +16,15 @@ const Subscription = () => {
                   </ul>
                   <div className="flex">
                   <div className={styles.subsciber}>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channhshel-name</span></p>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
-                    <p className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></p>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channhshel-name</span></div>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></div>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></div>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></div>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></div>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></div>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></div>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></div>
+                    <div className="ml-5"><div></div><span className={styles.channelName}>channel-name</span></div>
                     </div>
                     <p className="text-xl m-2 mt-5" onClick={()=>isSublist(true)}>All</p>
                   </div>
@@ -39,6 +40,7 @@ const Subscription = () => {
                     <li>Unwatched</li>
                     <li>Settings</li>
                   </ul>
+                  <Home/>
                 </div>
     </>
   )

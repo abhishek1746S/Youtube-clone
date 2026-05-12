@@ -1,0 +1,17 @@
+.videoContainer{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;   
+  scrollbar-width: none;
+}
+
+.videoContainer::-webkit-scrollbar{
+  display: none;
+}
+
+.videoBox{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+}

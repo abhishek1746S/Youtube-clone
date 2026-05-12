@@ -1,0 +1,12 @@
+.card{
+  width:100%;
+  height:350px;
+  background-color: aliceblue;
+  flex-shrink: 0;
+}
+.video{
+  width: 100%;
+  height: 250px;
+  background-color:rgb(154, 194, 229) ;
+  display: inline-flex;
+}

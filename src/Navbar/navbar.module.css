@@ -1,19 +1,23 @@
 .navbar{
-    position: absolute;
-    width:clamp(250px, 25vw, 250px);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 250px;
     height: 100vh;
+
     background-color: rgb(252, 249, 249);
+
     list-style: none;
+    padding: 0;
+    margin: 0;
+
     overflow-y: auto;
     scrollbar-width: none;
-     padding: 0;
-     margin: 0;
-     margin-left: 5px;
-     top: 0;
-     left: 0;
-     z-index: 4;
+
+    z-index: 14;
 }
-     
+
 .navbar li{
     display: flex;
     align-items: center;
