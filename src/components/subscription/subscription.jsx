@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./Subscription.module.css";
-import Home from '../Home/home.jsx';
+import Video from '../Home/video.jsx';
 const Subscription = () => {
   return (
     <>
@@ -40,7 +40,7 @@ const Subscription = () => {
                     <li>Unwatched</li>
                     <li>Settings</li>
                   </ul>
-                  <Home/>
+                  <Video/>
                 </div>
     </>
   )

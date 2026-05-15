@@ -1,15 +1,11 @@
 import React from 'react'
-import styles from "./home.module.css";
 import Video from './video.jsx'
-const home = () => {
+const Home = () => {
   return (
-    <div className={styles.child}>
-                  <Video/>
-                  <Video/>
-                  <Video/>
-                </div>
-            
+    <div className="mt-20">
+      <Video />
+    </div>
   )
 }
 
-export default home;
+export default Home

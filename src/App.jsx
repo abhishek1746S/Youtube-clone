@@ -8,6 +8,7 @@ function App() {
     <div><Header/></div>
     <main className="flex-1 "></main> 
     <Footer/>
+    
    </div>
    </>
   );

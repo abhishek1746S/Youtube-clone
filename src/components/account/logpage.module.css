@@ -1,0 +1,9 @@
+.logpag{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from "./Account.module.css"
-const account = () => {
+import {useState} from 'react'
+import Login from './logpage.jsx'
+const Account = () => {
+  const[logpage,islogpage]=useState(false);
   return (
     <div className={styles.parent}>
           <ul>
-            <li className="m-5">Accounts</li>
+            <li onClick={()=>{islogpage(true)}}className="m-5">Accounts</li>
             <li className="ml-auto m-5">
               <img src="https://img.icons8.com/?size=30&id=eMfeVHKyTnkc&format=png&color=000000"alt=""/>
             </li>
@@ -83,9 +86,12 @@ const account = () => {
               <p className="text-center">Get YouTube Premium</p>
             </div>
           </div>
+          {
+            logpage?<Login/>:null
+          }
       
     </div>
   )
 }
 
-export default account
+export default Account
